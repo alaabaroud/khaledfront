@@ -14,11 +14,12 @@ class Home extends React.Component {
   }
 
   componentDidMount = async () => {
-    const url= 
-    await axios.get("http://localhost:3002/getCoctail")
+console.log("hello");
+    const url= await axios.get("http://localhost:3002/getCoctail")
 this.setState({
   ApiData: url.data,
   showData: true
+  
 }) 
   }
 
